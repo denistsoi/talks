@@ -331,4 +331,5 @@ Closing Tips
 Special Thanks
 ===
 
+- Seed Alpha for letting me give this talk
 - Karen Farzam of Women Who Code HK

@@ -1,6 +1,6 @@
-# Denis Tsoi Talks
+# Talks
 
-A Repository of Development Related Talks
+A Repository of Talks produced by Denis Tsoi
 
 ### Directory
 

@@ -19,10 +19,10 @@
 - Junior web devs
 
 ## Acknowledgements
-- Vladimir Popov
-- TJ
-- Segment.io
-- Wearefractal
+- Vladimir Popov <vlad@seedalpha.net>
+- TJ [github](https://github.com/tj)
+- Segment.io [github](https://github.com/segmentio/)
+- Wearefractal [github](https://github.com/wearefractal)
 
 Primer: Everything is an object in javascript.
 ---

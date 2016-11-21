@@ -27,7 +27,7 @@ A Repository of Talks produced by Denis Tsoi
       /Mesos
       /CoreOS
 
-    Coming soon:
+### Coming soon:
 
     2017/
     2017-01-frontend-wah-liao-so-many-frontend/  |
@@ -40,7 +40,8 @@ A Repository of Talks produced by Denis Tsoi
     /redux                                       
     /alt [GraphQL, etc] 
     
-    TODO:
+### TODO
+
     - [ ] add contents to election/slackemon
     - [ ] finish devops
 

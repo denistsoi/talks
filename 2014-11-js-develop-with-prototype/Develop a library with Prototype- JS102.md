@@ -168,7 +168,7 @@ Midway summary
 ---
 - We created a function, with methods (that took no arguments)
 
-Let's create a method that takes an arguent
+Let's create a method that takes an argument
 ---
 ```js
 Person.prototype.levelup = function(level) {
@@ -310,10 +310,10 @@ TADA!
 Reading:
 ---
 ### if you want more info of how to build jQuery
-- [Dailyjs: how to build a framework] (http://dailyjs.com/framework.html)
+- [Dailyjs: how to build a framework](http://dailyjs.com/framework.html)
 
 ### Want to advance your JS?
-- [Eloquent Javascript] (http://eloquentjavascript.net/)
+- [Eloquent Javascript](http://eloquentjavascript.net/)
 
 ### License MIT
 ### Authored by Denis Tsoi with acknowledgement to Vladimir Popov

@@ -315,8 +315,11 @@ Reading:
 ### Want to advance your JS?
 - [Eloquent Javascript](http://eloquentjavascript.net/)
 
-### License MIT
-### Authored by Denis Tsoi with acknowledgement to Vladimir Popov
+### License 
+MIT
+
+### Author
+Denis Tsoi with acknowledgement to Vladimir Popov
 
 
 Closing Tips
@@ -326,10 +329,3 @@ Closing Tips
 - Don't be afraid to try
 - Take the time to reflect on your progress
 - Think about your tools to leverage your skillset
-
-
-Special Thanks
-===
-
-- Seed Alpha for letting me give this talk
-- Karen Farzam of Women Who Code HK

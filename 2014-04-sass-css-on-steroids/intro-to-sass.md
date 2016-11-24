@@ -1,5 +1,4 @@
-Intro to SASS:
-CSS on steroids
+Intro to SASS: CSS on steroids
 
 As part of the #WOCO.HK Frontend Series
 
@@ -36,22 +35,18 @@ Indented SASS
 COMPASS (SASS Extension)
 1. NESTED CSS
 2. Variables
+
+```
 $page-width: 768px;
- $cool-blue: #0CA8EB;
+$cool-blue: #0CA8EB;
  
- 
-
- 
- body {
+body {
   width: $page-width;
- }
+}
  
- 
-
- 
- nav li.active {
+nav li.active {
   background: $cool-blue;
- }
+}
 You can also use math!!!
 
 3. Mixins

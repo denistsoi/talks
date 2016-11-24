@@ -293,7 +293,7 @@ function $(el){
 }
 ```
 
-Let's go to [google.com] (google.com)
+Let's go to [google.com](google.com)
 
 ```js
 function $(el){

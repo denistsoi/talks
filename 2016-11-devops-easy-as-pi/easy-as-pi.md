@@ -34,7 +34,8 @@
 
 ## Primer 
 - NA
---- 
+
+---
 
 ## Summary
 
@@ -58,11 +59,12 @@ Deployment vs Orchestration vs Tools provided by Hosting Services/Providers
 
 I have an application that I've written, normally I would FTP that application onto a remote server that I may have purchased/rented. If I wanted to create multiple instances of that application over different locations, I would have to create/install servers in different locations manually. (example early Google with custom hardware in server farm).
 
-Then what happened?
+#### Then what happened?
 
 I now recreate virtual environments on remote servers (windows/Linux VM), which may or may not require server administrators to maintain that hardware and manually install OS updates.
 
-Then what happened?
+#### Then what happened?
+
 I could create Virtual Boxes to create diffent VMs. 
 
 But what if we want to create/manage and deploy different VMs over different locations?
@@ -71,10 +73,12 @@ But what if we want to create/manage and deploy different VMs over different loc
 
 Why was this seen as a potential problem? -->
 
-why do i want to create a linux machine?
+#### why do i want to create a linux machine?  
+
 Sometimes, applications could be run quite reasonably on a linux machine, without the need for expensive licensing of proprietary OS environments, as well as allowing the developer to maximise resource capacity for the application. (rather than install sections of the OS which may not be required for the application to function most efficiently)
 
-Why was this such an issue?
+#### Why was this such an issue?  
+
 Because, during this time, developers began to see the advantage of both separating the pieces of a LSA into smaller pieces (microservices), which allowed for easier maintenance, as well as leveraging maximum physical computing resources for each service.
 
 So what's the difference between Ansible/Vagrant & Docker?
@@ -96,7 +100,7 @@ first of all, you need to figure out what you want to leverage:
 
 
 ### Sources
-Stack Overflow[Answer](http://stackoverflow.com/a/18287169/2903169)
-[how to scale docker](http://stackoverflow.com/questions/18285212/how-to-scale-docker-containers-in-production)
-Alex Ellis. (Docker Captain, does incredible work with Pis)
-Incredible Team from Hypriot.
+Stack Overflow[Answer](http://stackoverflow.com/a/18287169/2903169)  
+[how to scale docker](http://stackoverflow.com/questions/18285212/  how-to-scale-docker-containers-in-production)
+Alex Ellis. (Docker Captain, does incredible work with Pis)  
+Incredible Team from Hypriot.  

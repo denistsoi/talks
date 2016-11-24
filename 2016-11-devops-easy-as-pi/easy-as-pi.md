@@ -100,7 +100,7 @@ first of all, you need to figure out what you want to leverage:
 
 
 ### Sources
-Stack Overflow[Answer](http://stackoverflow.com/a/18287169/2903169)  
-[how to scale docker](http://stackoverflow.com/questions/18285212/  how-to-scale-docker-containers-in-production)
+Stack Overflow [Answer](http://stackoverflow.com/a/18287169/2903169)  
+[how to scale docker](http://stackoverflow.com/questions/18285212/  how-to-scale-docker-containers-in-production)  
 Alex Ellis. (Docker Captain, does incredible work with Pis)  
 Incredible Team from Hypriot.  

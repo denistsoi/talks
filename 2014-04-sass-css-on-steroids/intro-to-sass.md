@@ -29,7 +29,7 @@ Hosted by Denis Tsoi
 ## 1. nested css
 
 before
-```
+```css
 body {
   /* some css */
 }
@@ -45,7 +45,7 @@ body .container .content ... more classes {}
 ```
 
 now
-```
+```scss
 body {
   /* some css */
   div.container {
@@ -54,13 +54,13 @@ body {
     .content {
       /* content css */
     }
-    ... more classes { /* more css */ }
+    .moreclasses { /* more css */ }
   }
 }
 ```
 
 alt
-```
+```scss
 body {
   /* some css */
 }
@@ -71,7 +71,7 @@ div.container {
   .content {
     /* content css */
   }
-  ... more classes { /* more css */ }
+  .moreclasses { /* more css */ }
 }
 ```
 
@@ -79,7 +79,7 @@ but why not just use specificity?
 
 ## 2. Variables
 
-```
+```scss
 $page-width: 768px;
 $cool-blue: #0CA8EB;
 
@@ -93,7 +93,7 @@ nav li.active {
 ```
 You can also use math!!!
 
-```
+```scss
 $size1: 10px;
 $size2: 20px;
 $size3: 30px;
@@ -106,7 +106,7 @@ $averagesize = $totalsize / 3; // 20px
 Mixins are reusable snippets of code
 (without the use of css classes)
 
-```
+```scss
 .some-style {
   margin: 0;
   padding: 0;
@@ -126,14 +126,14 @@ Mixins are reusable snippets of code
 }
 ```
 
-```
+```html
 <div class="some-style"></div>
 <div class="some-similar-style"></div>
 ```
 
 so you could do something the following without scss
 
-```
+```css
 .some-common-style {
   margin: 0;
   padding: 0;
@@ -148,7 +148,7 @@ so you could do something the following without scss
 }
 ```
 
-```
+```html
 <div class="some-common-style some-style"></div>
 <div class="some-common-style some-similar-style"></div>
 ```
@@ -157,7 +157,7 @@ but what if you want to minimize the population of css classes in your html mark
 
 this is where mixins come into play;
 
-```
+```scss
 @mixin commonstyle {
   margin: 0;
   padding: 0;
@@ -169,7 +169,7 @@ this is where mixins come into play;
 }
 ```
 
-```
+```html
 <div class="main"></div>
 <div class="detail"></div>
 ```
@@ -178,7 +178,7 @@ but reusing the `commonstyle` mixin above is only useful if the values are prede
 
 ## 4. arguments
 
-```
+```scss
 @mixin commonstyle($padding, $margin: 0) {
   margin: $margin;
   padding: $padding;
@@ -192,7 +192,7 @@ but reusing the `commonstyle` mixin above is only useful if the values are prede
 
 but lets use an earlier example
 
-```
+```scss
 @mixin font($font-size: 12px, $line-height: 12px, $font-weight: normal) {
   font-size: $font-size;
   line-height: $line-height;
@@ -213,7 +213,7 @@ With `extends`, you might be working on a `css class` and later down the line, y
 
 You can use `@extend .selector` such that
 
-```
+```scss
 .class {
   @extend .predefined;
 }
@@ -228,13 +228,16 @@ whereas `filename.scss` will be compile to a separate scss file
 other tips/tricks
 Using "&" as ' parent' selector...
 
-```
+```css
 li{
   width: 30px;
 }
- li:hover{
+li:hover {
   width: 100px;
 }
+```
+
+```scss
 li {
   width: 30px;
   &:hover {
@@ -253,22 +256,22 @@ Since sass 3.x.x, the popularity of using `{}` and `;` notation for scss, the po
 There are a few ways to getting started.
 From the sass-lang site, you can use the `ruby-gem` as follows.
 
-```
+```sh
 sass <input.sass> <output.css>
 ```
 
 example:
-```
+```sh
 $ sass input.sass output.css
 ```
 
 Watch one file
-```
+```sh
 sass --watch app.scss:public/stylesheets
 ```
 
 WATCH DIRECTORY
-```
+```sh
 sass --watch app.scss:public/stylesheets
 ```
 <!-- Lets take a break...
@@ -283,12 +286,17 @@ Checkout -->
 ### Update: 2016-12-14
 using scss with node
 options:
-- build tool (buildpack, webpack, gulp, grunt, yo etc)
-- middleware (quesadilla)
-- vanilla cli (`sass --watch`)
+- build tool (`buildpack`, `webpack`, `gulp`, `grunt`, `yo` etc)  
+- middleware (`node-quesadilla`)  
+- vanilla cli (`sass --watch`)  
+
+## The end
+
+Thanks for reaching thus far, and if you would like to learn more, you can either contact me via <denistsoi@gmail.com>
+or checkout [sass-lang.com](sass-lang.com) for documentation on scss, [codepen](http://codepen.io/search/pens?q=scss&limit=all&type=type-pens) for inspiration.
 
 ### Author
-Denis Tsoi 
+Denis Tsoi
 
 ### License
 ![CCBY](../assets/by.png)  

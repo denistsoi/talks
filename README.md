@@ -17,18 +17,13 @@ A Repository of Talks produced by Denis Tsoi
     2015-10-js-wit-is-slackémon/                 | [HKWD] | [Oct 2015: Wit is Slackémon]
 
     2016/
-    2016-12-php-laravel-setup/                   | [Dec: 2016: php laravel setup]
-
-    
+    2016-12-php-laravel-setup/                   | [Dec: 2016: php laravel setup]    
 
 
     Needs Fixing and touchup:
     2013/
     2013-08-css-wtf-css-3d/                      | [HKWD] | [Aug 2013: WTF is CSS 3d]
     2013-08-js-wtf-threejs/                      | [HKWD] | [Oct 2013: WTF is Three js]
-
-    2014/
-    2014-04-sass-css-on-steroids/                | [Women who Code Hong Kong | [Apr 2014: Sass: CSS on Steroids]
 
     In progress:
     2016-11-devops-easy-as-pi/                   | [Nov 2016: devops is easy as Pi]

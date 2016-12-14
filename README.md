@@ -6,22 +6,22 @@ A Repository of Talks produced by Denis Tsoi
 
     2013/
     2013-08-css-wtf-css-3d/                      | [HKWD] | [Aug 2013: WTF is CSS 3d]
-    2013-08-js-wtf-threejs/                      | [HKWD] | [Oct 2013: WTF is Three js] 
-    
+    2013-08-js-wtf-threejs/                      | [HKWD] | [Oct 2013: WTF is Three js]
+
     2014/
-    2014-04-sass-css-on-steroids/                | [Women who Code Hong Kong | [Apr 2014: Sass: CSS on Steroids] 
+    2014-04-sass-css-on-steroids/                | [Women who Code Hong Kong | [Apr 2014: Sass: CSS on Steroids]
     2014-11-js-develop-with-prototype/           | [Nov 2014: Develop with Prototype]
-    
+
     2015/
-    2015-02-js-what-the-shell-is-electron/       | [HKWD] | [Feb 2015: What the Shell is Electron?] 
-    2015-10-js-wit-is-slackémon/                 | [HKWD] | [Oct 2015: Wit is Slackémon] 
-    
+    2015-02-js-what-the-shell-is-electron/       | [HKWD] | [Feb 2015: What the Shell is Electron?]
+    2015-10-js-wit-is-slackémon/                 | [HKWD] | [Oct 2015: Wit is Slackémon]
+
     2016/
     2016-12-php-laravel-setup/                   | [Dec: 2016: php laravel setup]
 
     
-    
-    
+
+
     Needs Fixing and touchup:
     2013/
     2013-08-css-wtf-css-3d/                      | [HKWD] | [Aug 2013: WTF is CSS 3d]
@@ -35,13 +35,14 @@ A Repository of Talks produced by Denis Tsoi
       /Overview
       /Building Rig
       /Setting up
-      
+
       /Kubernetes
       /Docker [Swarm/Compose]
       /Mesos
       /CoreOS
 
-    
+
+
 
 ### Coming soon:
 
@@ -54,8 +55,8 @@ A Repository of Talks produced by Denis Tsoi
     /vuex                                        
     /rxjs                                        
     /redux                                       
-    /alt [GraphQL, etc] 
-    
+    /alt [GraphQL, etc]
+
 ### TODO
 
     - [ ] add contents to election/slackemon
@@ -68,8 +69,8 @@ Kit Yuen <br>
 Elliott Polk <br>
 
 ### Contributors
-Denis Tsoi 
+Denis Tsoi
 
-### License 
+### License
 ![CCBY](../assets/by.png)  
 Creative Commons Attribution License (do whatever, just attribute me) http://creativecommons.org/licenses/by/4.0/  

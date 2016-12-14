@@ -316,7 +316,8 @@ Reading:
 - [Eloquent Javascript](http://eloquentjavascript.net/)
 
 ### License 
-MIT
+![CCBY](../assets/by.png)  
+Creative Commons Attribution License (do whatever, just attribute me) http://creativecommons.org/licenses/by/4.0/
 
 ### Author
 Denis Tsoi with acknowledgement to Vladimir Popov

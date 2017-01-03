@@ -49,7 +49,8 @@ A Repository of Talks produced by Denis Tsoi
     2017-02-frontend-aiya-how-can-i-state-this/  |
     /vuex                                        
     /rxjs                                        
-    /redux                                       
+    /redux     
+    /mobx                                  
     /alt [GraphQL, etc]
 
 ### TODO

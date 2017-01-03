@@ -2,10 +2,8 @@
 # DevOps 101
 
 ## Leave if you already know the following
-- Devops is your jam
-- deloyed multiple applications/services
-- infrastructure is your vice
-- know how to deploy on multiple architectures to multiple physical locations
+- devops/infrastructure is your jam
+- deloyed multiple applications/services to single/multiple locations/instances
 - you plan to use a serverless infrastructure setup (more on this later)
 
 ## Aims
@@ -89,7 +87,7 @@ What's the easiest way to get myself started on orchestration?
 
 first of all, you need to figure out what you want to leverage: 
 - config files/existing hosting support and/or 
-- availability to increase technical debt?
+- resource availability at the expense to technical debt?
 
 ### Setting up;
 

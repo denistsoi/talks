@@ -19,12 +19,6 @@ A Repository of Talks produced by Denis Tsoi
     2016/
     2016-12-php-laravel-setup/                   | [Dec: 2016: php laravel setup]    
 
-
-    Needs Fixing and touchup:
-    2013/
-    2013-08-css-wtf-css-3d/                      | [HKWD] | [Aug 2013: WTF is CSS 3d]
-    2013-08-js-wtf-threejs/                      | [HKWD] | [Oct 2013: WTF is Three js]
-
     In progress:
     2016-11-devops-easy-as-pi/                   | [Nov 2016: devops is easy as Pi]
       /Overview
@@ -43,15 +37,15 @@ A Repository of Talks produced by Denis Tsoi
 
     2017/
     2017-01-frontend-wah-liao-so-many-frontend/  |
-    /vue2                                        
-    /ng2                                         
-    /react                                      
+        /vue2                                        
+        /ng2                                         
+        /react                                      
     2017-02-frontend-aiya-how-can-i-state-this/  |
-    /vuex                                        
-    /rxjs                                        
-    /redux     
-    /mobx                                  
-    /alt [GraphQL, etc]
+        /vuex                                        
+        /rxjs                                        
+        /redux     
+        /mobx                                  
+        /alt [GraphQL, etc]
 
 ### TODO
 

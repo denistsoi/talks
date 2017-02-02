@@ -36,16 +36,16 @@ A Repository of Talks produced by Denis Tsoi
 ### Coming soon:
 
     2017/
-    2017-01-frontend-wah-liao-so-many-frontend/  |
-        /vue2                                        
-        /ng2                                         
-        /react                                      
-    2017-02-frontend-aiya-how-can-i-state-this/  |
-        /vuex                                        
-        /rxjs                                        
-        /redux     
-        /mobx                                  
-        /alt [GraphQL, etc]
+        2017-01-frontend-wah-liao-so-many-frontend/  |
+            /vue2                                        
+            /ng2                                         
+            /react                                      
+        2017-02-frontend-aiya-how-can-i-state-this/  |
+            /vuex                                        
+            /rxjs                                        
+            /redux     
+            /mobx                                  
+            /alt [GraphQL, etc]
 
 ### TODO
 

@@ -1,0 +1,17 @@
+{
+  "name": "2017-03-01-frontend-wah-liao-so-many-frontend",
+  "version": "1.0.0",
+  "description": "collection of apps to showcase react, vue & angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Denis Tsoi <denistsoi@gmail.com> (https://github.com/denistsoi)",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "webpack": "^2.3.2"
+  }
+}

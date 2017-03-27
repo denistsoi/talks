@@ -1,0 +1,15 @@
+{
+  "name": "2017-01-03-frontend-wtf-css-grids",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "grids",
+    "CSS"
+  ],
+  "author": "Denis Tsoi <denistsoi@gmail.com>",
+  "license": "MIT"
+}

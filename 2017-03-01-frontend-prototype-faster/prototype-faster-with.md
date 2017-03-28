@@ -1,8 +1,4 @@
-# devtools for a frontend expert but devops noob
-
-## Leave if you already know the following
-- if you have a tool chain which is easy as pi
-- know about ci/cd and implement that as part of your workflow
+# prototools for a frontend dev but a devops noob
 
 ## contents
 1. primer
@@ -45,4 +41,31 @@ I'd say that this is a simplier toolchain, and doesn't price for low traffic/ope
 ### 3.6. glitch  
 [Glitch](https://glitch.com/) is a free platform that allows browser editing both front and backend. This is definitely something to watch.
 
-### 3.7. others/aws  
+Doesn't provide a cli; should note that if doing offline development.
+
+### 3.7. others/aws  (credit to vincentlau for [serverless talk](http://slides.com/chunyinvincentlau/serverless-aws-lambda))
+
+serverless architecture. [apex](https://github.com/apex/apex) / [serverless](https://github.com/serverless/serverless). this is a little bit new for me and had to read up on the background reading just to get a better grasp of things. So first of all, with AWS Lambda, Google Cloud Functions, Azure Function etc, the idea is that, these cloud providers want to abstract away the need for setting a dedicated server (backend -> DB etc) and allow developers to focus purely on the business logic, i.e. programming the functions necessary that are relevant to their core business.
+
+However, the issue arises when you want to leverage those cloud providers, (especially using their free tiers), to push across multiple instances and locales. This is where tools like apex and serverless step in.
+
+yes?:   
+👍 Stateless  
+👍 Short Job  
+👍 Event-driven stuff, e.g. Time-based / webhook  
+👍 Spike Patterns of usage  
+👍 Simple program with less dependency  
+👍 ad-hoc scripts with need to modify and version  
+👍 Need Real quick set up, quicker than Knubertes  
+
+no!:  
+🙅 Stateful e.g. Session servers  
+🙅 Long running (=>$$)  
+🙅 Cache is important -> can use external elasticCache  
+🙅 High CPU/Memory Usage (Max 1.5GB per process)  
+🙅 Complex gcc / machine drivers etc  
+🙅 High frequency self-trigger (max @1min event now) -> Use SNS/Celery!  
+🙅 Need DAG Job dependencies   -> Use airflow!  
+🙅 Strong fault tolerance /monitor req -> Use Celery / Gearman!  
+🙅 Layman stuff -> Use Zappier / IFTTT!  
+

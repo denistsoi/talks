@@ -101,42 +101,45 @@ the concept of emphasizing minimalism
 # what do i need for good ux/ui?
 ---
 
-  > we're gonna focus on a hackathon, we won't focus on premature optimisations, we'll gloss over that in a moment
+  > our focus is on hackathons, so we won't focus on premature optimisations too much.
 
 ---
 ## prinicples for good ux
 ---
 
-- ask questions early on, what does your product try to solve?
+- ask **questions early on**, what does your product try to solve?
 
-  - generate hypothesies and validate/reject those assumptions.
-  - be strong to adapt, whether to reject/pivot your product if the market information tells you there isn't a market fit.
+  - generate **hypothesies** and validate/reject those assumptions.
+  - be **strong** to adapt, whether to reject/pivot your product if the market information tells you there isn't a market fit.
   - if the market is telling you it's a hard sell, increase your company resources/ change pitch to cater for that market (ad spend/sales channels).
-  - how does your clients interact with your product? is this the most effective method?
+  - how do your clients interact with your product? is this the most **effective** method?
 
 
-- ask whether you can increase ux with an app install, or via a web app (i.e. 100MB updates aren't ideal, especailly if you're on a 3G/usage contract).
+- ask whether you can need an app install, or can a web app do the job (100MB updates aren't ideal, especailly if you're on a 3G/usage contract).
 
 - LINE HEIGHTS! (VERTICAL Rhythm)
 - iA [ia](https://ia.net/topics/bringing-responsiveness-the-app-world/)
+- grid layouts (why they're important)
 
 ---
 #### how to develop on respective platforms
 ---
-  ### mobile
+
+### mobile
 
   - figure out what you're most comfortable to develop a prototype in; whether that is native iOS/Android, Responsive webpage or cross platform frameworks (React/Xamarin/Unity)
 
-  ### desktop
+### desktop
 
   - native or browser?
   - what browser do you want to target? -
   - look at target browser adoption rates
 
-  ### both
+### both
 
   - unified brand identity
   - responsive (if necessary)
+  - visual representations for information (icons/colors)
 
 ---
 ## optimise for mobile
@@ -152,19 +155,48 @@ the concept of emphasizing minimalism
 ---
 examples:
 
-## airbnb
+# airbnb
+---
+## login
 
 ### before
-
+![airbnb login](./airbnb-original-login.jpg)  
 
 ### after
+![airbnb redesign login](./airbnb-redesign-login.jpg)  
+
+---
+## profile
+
+### before
+![airbnb profile](./airbnb-original-profile.jpg)  
+
+### after
+![airbnb redesign profile](./airbnb-redesign-profile.jpg)  
+
+---
+## profile
+
+### before
+![airbnb nav](./airbnb-original-nav.jpg)  
+
+### after
+![airbnb redesign nav](./airbnb-redesign-nav.jpg)  
+
 
 ---
 ## uber
 
 ### before
 
+![uber original](./ubder-original.jpg)  
+
 ### after
+
+![uber original](./ubder-flow-redesign.jpg)  
+
+<!--  imporantance on map / position -->
+<!--  fluid transitions -->
 
 ---
 
@@ -190,7 +222,7 @@ examples:
 
 ---
     - breaks the grid
-    - hierachy to titles - rich media (photos attrach more attention)
+    - hierachy to titles - rich media (photos attract more attention)
     - use of color gradient
 ---    
 
@@ -198,7 +230,7 @@ examples:
 
 ---
 
-japanese movie posters in March 2017
+Japanese movie posters in March 2017
 
 ### logan
 ![logan-japan-poster](./movie-logan-example.jpg)  

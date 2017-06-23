@@ -125,6 +125,8 @@ the concept of emphasizing minimalism
 - leverage other knowledge domains if encountering challenges (data science/ml/automation)
 
 
+![uber taxi visualisation](./uber-taxi.gif)  
+
 ---
 #### how to develop on respective platforms
 ---
@@ -362,20 +364,16 @@ resources:
 - medium -> look at product FB/dropbox/google teams, UXPin,
 - Freecodecamp/design
 
-other:
-- https://medium.com/sketch-app-sources/building-a-sexy-dashboard-40831ea274a4
 ---
 talks
 
 ### the blossoming world of data Visualisation
 
-<iframe src="//slides.com/droste/harbour-front/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+[Credit to Droste](https://slides.com/droste/harbour-front/)
 
 ### don't rely on dropdowns
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hcYAHix-riY" frameborder="0" allowfullscreen></iframe>
-
+[youtube video](https://www.youtube.com/embed/hcYAHix-riY)
 
 ### your users have a limited decision quota
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1pq5jnM1C-A" frameborder="0" allowfullscreen></iframe>
+[youtube video](https://www.youtube.com/embed/1pq5jnM1C-A)

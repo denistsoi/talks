@@ -160,40 +160,42 @@ examples:
 ## login
 
 ### before
-![airbnb login](./airbnb-original-login.jpg)  
+![airbnb login](./airbnb-original-login.png)  
 
 ### after
-![airbnb redesign login](./airbnb-redesign-login.jpg)  
+![airbnb redesign login](./airbnb-redesign-login.png)  
 
 ---
 ## profile
 
 ### before
-![airbnb profile](./airbnb-original-profile.jpg)  
+![airbnb profile](./airbnb-original-profile.png)  
 
 ### after
-![airbnb redesign profile](./airbnb-redesign-profile.jpg)  
+![airbnb redesign profile](./airbnb-redesign-profile.png)  
 
 ---
 ## profile
 
 ### before
-![airbnb nav](./airbnb-original-nav.jpg)  
+![airbnb nav](./airbnb-original-nav.png)  
 
 ### after
-![airbnb redesign nav](./airbnb-redesign-nav.jpg)  
+![airbnb redesign nav](./airbnb-redesign-nav.png)  
 
+### user-flow
+![airbnb redesign nav](./airbnb-flow.gif)  
 
 ---
 ## uber
 
 ### before
 
-![uber original](./ubder-original.jpg)  
+![uber original](./uber-classic.png)  
 
 ### after
 
-![uber original](./ubder-flow-redesign.jpg)  
+![uber original](./uber-flow-redesign.gif)  
 
 <!--  imporantance on map / position -->
 <!--  fluid transitions -->

@@ -36,6 +36,7 @@ With each library, we'll try and condense each concept into it's core components
         2.1.2. rxjs  
         2.1.3. redux  
         2.1.4. mobx  
+      2.2. Trans
         2.1.5. alt (graphql example/setup)
 ---
 ### Author

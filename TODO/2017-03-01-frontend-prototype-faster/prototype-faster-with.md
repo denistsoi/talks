@@ -43,7 +43,7 @@ I'd say that this is a simplier toolchain, and doesn't price for low traffic/ope
 
 Doesn't provide a cli; should note that if doing offline development.
 
-### 3.7. others/aws  (credit to vincentlau for [serverless talk](http://slides.com/chunyinvincentlau/serverless-aws-lambda))
+### 3.7. others/aws  (credit/ref to vincentlau for [serverless talk](http://slides.com/chunyinvincentlau/serverless-aws-lambda))
 
 serverless architecture. [apex](https://github.com/apex/apex) / [serverless](https://github.com/serverless/serverless). this is a little bit new for me and had to read up on the background reading just to get a better grasp of things. So first of all, with AWS Lambda, Google Cloud Functions, Azure Function etc, the idea is that, these cloud providers want to abstract away the need for setting a dedicated server (backend -> DB etc) and allow developers to focus purely on the business logic, i.e. programming the functions necessary that are relevant to their core business.
 

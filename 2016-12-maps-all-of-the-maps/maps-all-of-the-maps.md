@@ -39,7 +39,7 @@ If you have some basic concepts from WebGL then you might get some added benefit
 ## 3. primer
 
 ### primer: webgl vs 2dcanvas vs svg rendering
-TODO:
+
 
 ## 4. considerations with webgl
 TODO:
@@ -48,17 +48,18 @@ TODO:
 
 For datasets of varying size we should consider the following:
 
-1. Whether the data visualization will convey meaning (too narrow and lost meaning, too wide and inference is difficult to determine).
-2. Computational/Graphical limitations of renderer.
+1. Whether the data visualization will convey meaning (narrow too much and risk losing meaning... too broad and render noise that is difficult to interpret).
+2. Computational/Graphical limitations of renderer. (i.e. if we want to render on mobile/lower hardware specs)
 
 #### 1. convey meaning for data visualization
 
-One of the biggest considerations is how we wish to view and render the amount of information to convey meaning. Rendering a graphical ui with a very narrowed scope or limited amount of data can create a sense of misinformation for the viewer. (i.e. provide no information)
-Conversely, rendering something which provides a vast amount of information may not be able to provide meaning to the targetted viewer. (i.e. information overload). In this scenario, the effort of rendering this information may be an incorrect choice, and further effort to convey meaning may require more effort. (extra charts or using an alternative method of rendering the data).
+One of the biggest considerations is how we wish to view and render the amount of information to convey meaning.  
+Rendering a graphical ui with a very narrowed scope or limited amount of data can create a sense of misinformation for the viewer. (i.e. provide no information)  
+Conversely, rendering something which provides a vast amount of information may not be able to provide meaning to the targetted viewer. (i.e. information overload). In this scenario, the effort of rendering this information may be an incorrect choice, and further effort to convey meaning may require more effort. (extra charts or using an alternative method of rendering the data).  
 
 #### 2. graphical limitations of renderer
 
-The second consideration with rendering is that, if like above, you wish to render a large amount of information, you may be limited to the performance of the rendering method. An interactive visual interface may also require further considerations to maintain visual performance. (i.e. fps).
+The second consideration with rendering is that, if like above, you wish to render a large amount of information, you may be limited to the performance of the rendering method. An interactive visual interface may also require further considerations to maintain visual performance. (i.e. fps).  
 
 
 

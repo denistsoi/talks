@@ -149,6 +149,8 @@ the concept of emphasizing minimalism
   - unified brand identity
   - responsive (if necessary)
   - visual representations for information (icons/colors)
+  - add mouse trackers to generate heatmaps (gives you as a developer feedback on how to improve)
+
 
 ---
 ## optimise for mobile

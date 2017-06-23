@@ -107,7 +107,7 @@ the concept of emphasizing minimalism
 ## prinicples for good ux
 ---
 
-- ask **questions early on**, what does your product try to solve?
+- ask **questions** early on, what does your product try to solve?
 
   - generate **hypothesies** and validate/reject those assumptions.
   - be **strong** to adapt, whether to reject/pivot your product if the market information tells you there isn't a market fit.
@@ -118,8 +118,12 @@ the concept of emphasizing minimalism
 - ask whether you can need an app install, or can a web app do the job (100MB updates aren't ideal, especailly if you're on a 3G/usage contract).
 
 - LINE HEIGHTS! (VERTICAL Rhythm)
-- iA [ia](https://ia.net/topics/bringing-responsiveness-the-app-world/)
 - grid layouts (why they're important)
+- use familiar visual representations (hamburgers)
+
+
+- leverage other knowledge domains if encountering challenges (data science/ml/automation)
+
 
 ---
 #### how to develop on respective platforms
@@ -128,6 +132,9 @@ the concept of emphasizing minimalism
 ### mobile
 
   - figure out what you're most comfortable to develop a prototype in; whether that is native iOS/Android, Responsive webpage or cross platform frameworks (React/Xamarin/Unity)
+  - thumbs are big - so account for that when designing buttons (increase padding)
+  - only animate when neceassary (i.e. factor for low end devices)
+  - leverage native functionality (push notifications / etc)
 
 ### desktop
 
@@ -259,10 +266,8 @@ Japanese movie posters in March 2017
 
 <!--  what does the translation say again? -->
 
-
----
+<!-- summarise and recollect -->
 <!-- pause -->
----
 
 ---
 # practical application:
@@ -271,35 +276,73 @@ Japanese movie posters in March 2017
 
 ### Finance
 
-- visualisations > institution side, harder sell
-- client side > access to data
+#### possible pain points:
 
-Case Study:
+    - data overload [medium-post](https://medium.com/seed-alpha/how-to-manage-information-overload-bf2693d3484f)
+    - data can often be restricted/visually dull
 
+#### questions:
+
+    - what sector are you targetting here? (client acquisition/new clients)?
+    - what pain points does a company have day-to-day?
+    - how do clients interact with the bank (here chatbots provide a lot of value)
 
 ### Insurance
 
-- brokering/ML, automation
-- client > onboarding
+#### possible pain points:
+
+    - too many forms, lack of design intent
+    - repetitive tasks, candidate for automation [Fukoku Mutual Life Insurance replaces 34 workers](https://www.theguardian.com/technology/2017/jan/05/japanese-company-replaces-office-workers-artificial-intelligence-ai-fukoku-mutual-life-insurance)
+
+#### questions
+
+    - do users/clients care enough (is it lack of public awareness or too much competition?)
+    - what value add can companies give to users/clients?
+    - what do people care about when it comes to insurance? too much choice or can't decide?
 
 ### Regtech
 
-- processing
-- information
+Note: (not familiar with work processes here)
 
-What value are you providing to your users?
-how to tackle information overflow (infographics/visualizing numbers)
-- https://medium.com/sketch-app-sources/building-a-sexy-dashboard-40831ea274a4
--
+#### questions
+
+    - how does the industry operate?
+    - what is a typical pain point for companies?
+    - how do companies engage with clients?
+    - how do companies attract new clients? (user perspective, why do clients reach out to companies...)
+
 
 ---
-Example:
+### Example:
 
 Tools used Sketchapp *(graphic design tool)*
 
 A story:
 
 Fintech hackathon Oct 2016 sponsored by HSBC:
+
+How I pitched it. mention one team member as guinea pig.
+
+1. tried to develop app from scratch, threw it out after an hour on the realisation that it was a one person team.
+2. Asked the question "what are you trying to solve"
+3. Reviewed design of current financial/banking apps
+4. found template resources online (you can use github template/tutorials if you already know how to develop)
+5. started designing based around existing brand identity.
+6. spent a few hours before going home.
+
+### next day
+
+7. threw everything out cause it sucked
+8. started again basing template on ui-templates and similarity to brand
+9. link screens to invisionapp to categorise flow
+10. demo
+
+### what i learned
+- go with your instinct, you know what works and what doesn't
+- have someone on hand to review/discuss design
+  it's for your own benefit to voice your thoughts and take mental breaks
+- use existing frameworks to prototype in your preferred code base
+- push screens out the door and keep the pitch simple
 
 
 ---
@@ -313,7 +356,26 @@ resources:
 - Jiro dreams of sushi
 - Jodorowsky's Dune
 
+- Art of the title http://www.artofthetitle.com/
+- Dribbble
+- Behance
+- medium -> look at product FB/dropbox/google teams, UXPin,
+- Freecodecamp/design
 
-Dribbble
-Behance
-medium -> look at product teams, UXPin, Freecodecamp/design
+other:
+- https://medium.com/sketch-app-sources/building-a-sexy-dashboard-40831ea274a4
+---
+talks
+
+### the blossoming world of data Visualisation
+
+<iframe src="//slides.com/droste/harbour-front/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+### don't rely on dropdowns
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hcYAHix-riY" frameborder="0" allowfullscreen></iframe>
+
+
+### your users have a limited decision quota
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1pq5jnM1C-A" frameborder="0" allowfullscreen></iframe>

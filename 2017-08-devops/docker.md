@@ -1,7 +1,7 @@
 # docker workshop
 
 
-based on https://github.com/gvilarino/docker-workshop
+based on xd
 
 # hello world
 
@@ -78,6 +78,10 @@ Other commands
     docker service create --name pinger --replicas 1 alpine ping docker.com
     docker service scale pinger=5
     docker-machine rm worker1
+
+
+    docker rmi $(docker ps -a -q)
+    docker rm $(docker ps -a -q)
 
 ### author
 Denis Tsoi

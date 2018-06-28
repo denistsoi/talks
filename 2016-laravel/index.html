@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Denis Tsoi | PHP laravel setup on OSX</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/talks/assets/css/12.styles.b03cb546.css" as="style"><link rel="preload" href="/talks/assets/js/app.3b53f309.js" as="script"><link rel="preload" href="/talks/assets/js/6.a115e269.js" as="script"><link rel="prefetch" href="/talks/assets/js/0.4f86eb99.js"><link rel="prefetch" href="/talks/assets/js/1.623cfe98.js"><link rel="prefetch" href="/talks/assets/js/2.fe07065d.js"><link rel="prefetch" href="/talks/assets/js/3.e86d2629.js"><link rel="prefetch" href="/talks/assets/js/4.5eea39a7.js"><link rel="prefetch" href="/talks/assets/js/5.dc408caa.js"><link rel="prefetch" href="/talks/assets/js/7.fd02250b.js"><link rel="prefetch" href="/talks/assets/js/8.2361434e.js"><link rel="prefetch" href="/talks/assets/js/9.3383427b.js"><link rel="prefetch" href="/talks/assets/js/10.b68afec7.js"><link rel="prefetch" href="/talks/assets/js/11.6cc4d933.js">
+    <link rel="stylesheet" href="/talks/assets/css/12.styles.b03cb546.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/talks/" class="home-link router-link-active"><!----><span class="site-name">
+      Denis Tsoi
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="https://denistsoi.github.io" target="_blank" rel="noopener noreferrer" class="nav-link">CV</a></div><div class="nav-item"><a href="/talks/" class="nav-link">Talks</a></div><div class="nav-item"><a href="https://github.com/denistsoi" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://denistsoi.github.io" target="_blank" rel="noopener noreferrer" class="nav-link">CV</a></div><div class="nav-item"><a href="/talks/" class="nav-link">Talks</a></div><div class="nav-item"><a href="https://github.com/denistsoi" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav><!----></div><div class="page"><div class="content"><h1 id="php-laravel-setup-on-osx"><a href="#php-laravel-setup-on-osx" aria-hidden="true" class="header-anchor">#</a> PHP laravel setup on OSX</h1><h4 id="disclaimer"><a href="#disclaimer" aria-hidden="true" class="header-anchor">#</a> Disclaimer</h4><p>My background in development started as a frontend web dev and later moved towards nodejs to the backend as my main stack.
+Therefore, it helps me to write down the setup process</p><h4 id="prereqs"><a href="#prereqs" aria-hidden="true" class="header-anchor">#</a> Prereqs</h4><p>you'll need</p><ul><li>php (which should be installed on your machine)</li><li>composer</li><li>laravel</li><li>scaffold application and run local dev server</li><li>alt - local server mamp (to get the server running via an app)</li></ul><h2 id="setup-composer"><a href="#setup-composer" aria-hidden="true" class="header-anchor">#</a> setup composer</h2><pre class="language-text"><code>curl -sS https://getcomposer.org/installer | php 
+php composer.phar
+mv composer.phar /usr/local/bin/composer
+composer
+</code></pre><p>You can also create an alias but it's duplicating
+<code>mv composer.phar /usr/local/bin/composer</code></p><h2 id="setup-laravel"><a href="#setup-laravel" aria-hidden="true" class="header-anchor">#</a> setup laravel</h2><h4 id="via-laravel-installer"><a href="#via-laravel-installer" aria-hidden="true" class="header-anchor">#</a> via laravel/installer</h4><pre class="language-text"><code>composer global require &quot;laravel/installer&quot;
+</code></pre><p>afterwards to ensure that you can globally call the package</p><p>add the following to your bash/zshrc
+<code>export PATH=$PATH:~/.composer/vendor/bin</code></p><p>by doing <code>laravel</code> you should now be able to see the command prompt for laravel.</p><h2 id="scaffold-application-and-run-local-dev-server"><a href="#scaffold-application-and-run-local-dev-server" aria-hidden="true" class="header-anchor">#</a> scaffold application and run local dev server</h2><pre class="language-text"><code>laravel new blogname
+cd blogname
+php artisan serve
+</code></pre><h4 id="alt-local-server"><a href="#alt-local-server" aria-hidden="true" class="header-anchor">#</a> Alt - local server</h4><p>You can also use mamp to serve the project from the project dir/  via <a href="https://www.mamp.info/en/" target="_blank" rel="noopener noreferrer">mamp</a></p><h3 id="author"><a href="#author" aria-hidden="true" class="header-anchor">#</a> Author</h3><p>Denis Tsoi <a href="mailto:denistsoi@gmail.com">denistsoi@gmail.com</a></p></div><!----><!----></div></div></div>
+    <script src="/talks/assets/js/6.a115e269.js" defer></script><script src="/talks/assets/js/app.3b53f309.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Denis Tsoi | docker workshop</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/talks/assets/css/12.styles.b03cb546.css" as="style"><link rel="preload" href="/talks/assets/js/app.3b53f309.js" as="script"><link rel="preload" href="/talks/assets/js/3.e86d2629.js" as="script"><link rel="prefetch" href="/talks/assets/js/0.4f86eb99.js"><link rel="prefetch" href="/talks/assets/js/1.623cfe98.js"><link rel="prefetch" href="/talks/assets/js/2.fe07065d.js"><link rel="prefetch" href="/talks/assets/js/4.5eea39a7.js"><link rel="prefetch" href="/talks/assets/js/5.dc408caa.js"><link rel="prefetch" href="/talks/assets/js/6.a115e269.js"><link rel="prefetch" href="/talks/assets/js/7.fd02250b.js"><link rel="prefetch" href="/talks/assets/js/8.2361434e.js"><link rel="prefetch" href="/talks/assets/js/9.3383427b.js"><link rel="prefetch" href="/talks/assets/js/10.b68afec7.js"><link rel="prefetch" href="/talks/assets/js/11.6cc4d933.js">
+    <link rel="stylesheet" href="/talks/assets/css/12.styles.b03cb546.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/talks/" class="home-link router-link-active"><!----><span class="site-name">
+      Denis Tsoi
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="https://denistsoi.github.io" target="_blank" rel="noopener noreferrer" class="nav-link">CV</a></div><div class="nav-item"><a href="/talks/" class="nav-link">Talks</a></div><div class="nav-item"><a href="https://github.com/denistsoi" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://denistsoi.github.io" target="_blank" rel="noopener noreferrer" class="nav-link">CV</a></div><div class="nav-item"><a href="/talks/" class="nav-link">Talks</a></div><div class="nav-item"><a href="https://github.com/denistsoi" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav><!----></div><div class="page"><div class="content"><h1 id="docker-workshop"><a href="#docker-workshop" aria-hidden="true" class="header-anchor">#</a> docker workshop</h1><p>based on xd</p><h1 id="hello-world"><a href="#hello-world" aria-hidden="true" class="header-anchor">#</a> hello world</h1><pre><code>docker run hello-world
+docker ps -a
+docker pull
+docker run --name &lt;name&gt; image
+
+docker rm &lt;name&gt;
+
+docker run -d --name app -p 3000:3000 gvilarino/docker-testing
+</code></pre><h1 id="connect-containers"><a href="#connect-containers" aria-hidden="true" class="header-anchor">#</a> connect containers</h1><pre><code>docker network create app-network
+
+docker network ls
+
+docker network connect app-network &lt;db&gt;
+docker network connect app-network &lt;app&gt;
+</code></pre><h1 id="compose"><a href="#compose" aria-hidden="true" class="header-anchor">#</a> compose</h1><p>use https://github.com/gvilarino/docker-testing</p><pre><code>docker-compose.yml
+
+version: '2'
+
+services:
+  app:
+    build: gvilarino/docker-testing
+    environment:
+      MONGO_URL: &quot;mongodb://db/test&quot;
+    depends_on:
+      - db
+    ports:
+      - &quot;3000:3000&quot;
+
+  db:
+    image: mongo
+</code></pre><h3 id="use-local-docker-compose"><a href="#use-local-docker-compose" aria-hidden="true" class="header-anchor">#</a> use local docker compose</h3><p>change app: <code>build: gvilarino/docker-testing</code> to <code>build: .</code></p><p>add app:</p><pre><code>volumes:
+  - .:/usr/src
+  - /usr/src/node_modules
+</code></pre><p>Other commands</p><pre><code>docker-compose ps
+docker-compose images
+docker-compose up -d
+docker-compose up -d -f
+</code></pre><h1 id="swarm"><a href="#swarm" aria-hidden="true" class="header-anchor">#</a> swarm</h1><pre><code>docker-machine create -d virtualbox manager
+docker-machine ssh manager
+docker-machine create -d virtualbox worker1
+docker-machine create -d virtualbox worker2
+
+docker-machine ssh worker1 
+  docker swarm join --token &lt;token&gt; &lt;default swarm location&gt;
+
+docker-machine ssh worker2 
+  docker swarm join --token &lt;token&gt; &lt;default swarm location&gt;
+
+docker node ls
+docker service create --name pinger --replicas 1 alpine ping docker.com
+docker service scale pinger=5
+docker-machine rm worker1
+
+
+docker rmi $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+</code></pre><h3 id="author"><a href="#author" aria-hidden="true" class="header-anchor">#</a> author</h3><p>Denis Tsoi</p></div><!----><!----></div></div></div>
+    <script src="/talks/assets/js/3.e86d2629.js" defer></script><script src="/talks/assets/js/app.3b53f309.js" defer></script>
+  </body>
+</html>

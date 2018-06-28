@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Denis Tsoi | WTF is Three js??? </title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/talks/assets/css/12.styles.b03cb546.css" as="style"><link rel="preload" href="/talks/assets/js/app.3b53f309.js" as="script"><link rel="preload" href="/talks/assets/js/11.6cc4d933.js" as="script"><link rel="prefetch" href="/talks/assets/js/0.4f86eb99.js"><link rel="prefetch" href="/talks/assets/js/1.623cfe98.js"><link rel="prefetch" href="/talks/assets/js/2.fe07065d.js"><link rel="prefetch" href="/talks/assets/js/3.e86d2629.js"><link rel="prefetch" href="/talks/assets/js/4.5eea39a7.js"><link rel="prefetch" href="/talks/assets/js/5.dc408caa.js"><link rel="prefetch" href="/talks/assets/js/6.a115e269.js"><link rel="prefetch" href="/talks/assets/js/7.fd02250b.js"><link rel="prefetch" href="/talks/assets/js/8.2361434e.js"><link rel="prefetch" href="/talks/assets/js/9.3383427b.js"><link rel="prefetch" href="/talks/assets/js/10.b68afec7.js">
+    <link rel="stylesheet" href="/talks/assets/css/12.styles.b03cb546.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/talks/" class="home-link router-link-active"><!----><span class="site-name">
+      Denis Tsoi
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="https://denistsoi.github.io" target="_blank" rel="noopener noreferrer" class="nav-link">CV</a></div><div class="nav-item"><a href="/talks/" class="nav-link">Talks</a></div><div class="nav-item"><a href="https://github.com/denistsoi" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://denistsoi.github.io" target="_blank" rel="noopener noreferrer" class="nav-link">CV</a></div><div class="nav-item"><a href="/talks/" class="nav-link">Talks</a></div><div class="nav-item"><a href="https://github.com/denistsoi" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav><!----></div><div class="page"><div class="content"><h1 id="wtf-is-three-js"><a href="#wtf-is-three-js" aria-hidden="true" class="header-anchor">#</a> WTF is Three js???</h1><p>hosted by HKWD</p><p>Presented by
+3d wannabe
+@DenisTsoi</p><h3 id="disclaimer"><a href="#disclaimer" aria-hidden="true" class="header-anchor">#</a> DisclaimeR</h3><p>I am NOT a 3d Expert...
+I just started learning...
+and forced myself to give a talk...</p><h2 id="who-started-three-js"><a href="#who-started-three-js" aria-hidden="true" class="header-anchor">#</a> Who started three.js?</h2><p>Why??? ... Check out below</p><ul><li><p>Intro Talk by Mr Doob &amp; AlteredQualia 2012</p></li><li><p>Another Good Intro Video</p></li></ul><h2 id="what-we-will-be-covering"><a href="#what-we-will-be-covering" aria-hidden="true" class="header-anchor">#</a> What WE Will be Covering</h2><p>Fundamentals of using three.js</p><ul><li><p>What is WebGL and why should you care?
+// Graphics pipeline</p></li><li><p>What do I need to know to get started?
+// Cameras, Lights, Meshes, Materials, Geometry
+... ACTION!</p></li></ul><h2 id="what-is-the-graphics-pipeline"><a href="#what-is-the-graphics-pipeline" aria-hidden="true" class="header-anchor">#</a> What is the Graphics Pipeline?</h2><p>[And Why Should I Care?]</p><p>Explanation of all that:</p><ol><li>3d Model gets sent to GPU as vertices</li><li> Vertices get converted to 2d using algos</li><li>2d image is mapped to screen space in colour buffer</li><li> Monitor displays colour buffer</li></ol><p>BOOM!</p><h2 id="what-is-three-js-in-relation-to-webgl"><a href="#what-is-three-js-in-relation-to-webgl" aria-hidden="true" class="header-anchor">#</a> What is Three.js... in relation to WEbGL?</h2><p>Even though WebGl is an abstraction of OpenGL, 
+WebGL is low level compared to Three.js</p><p>Therefore...</p><p>WHAT IS THREE.JS...</p><p>IN RELATION TO WEBGL?</p><p>...
+Three.js is higher level! - </p><p>Great for us Designers and people who are afraid of math</p><h2 id="basics"><a href="#basics" aria-hidden="true" class="header-anchor">#</a> Basics</h2><ul><li>What is a Camera?</li><li>What is a Scene?</li><li>What is Geometry?</li><li>How is an object drawn ?</li><li>What is a Mesh?</li><li>How an object is drawn with the material data corresponding to the object</li></ul><h3 id="shaders-material"><a href="#shaders-material" aria-hidden="true" class="header-anchor">#</a> Shaders/Material</h3><p>http://jsfiddle.net/denistsoi/y6DNs/1/</p><p>Lambert = &quot;Flat/Matt&quot;
+Phong = Shiny!</p><h3 id="what-is-lighting"><a href="#what-is-lighting" aria-hidden="true" class="header-anchor">#</a> What is lighting?</h3><p>Ambient - applied to everyting<br>
+Point Light - Radiates Everywhere from source<br>
+Spot Light - Cone Radient from source<br>
+Directional Light - &quot;Sun&quot;</p><h2 id="lets-reiterate-code"><a href="#lets-reiterate-code" aria-hidden="true" class="header-anchor">#</a> Lets Reiterate / Code</h2><p>//Create a scene</p><pre><code>var scene = new THREE.Scene(); 
+</code></pre><p>//Create a camera</p><pre><code>var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000); 
+</code></pre><p>// select a render (Choice of WebGL or Canvas***)</p><pre><code>var renderer = new THREE.WebGLRenderer(); 
+</code></pre><p>// set size of render</p><pre><code>renderer.setSize(window.innerWidth, window.innerHeight); 
+</code></pre><p>// append renderer as Dom element</p><pre><code>document.body.appendChild(renderer.domElement); 
+</code></pre><p>Almost done...</p><p>// lets add a Geometry</p><pre><code>var geometry = new THREE.CubeGeometry(1,2,1); 
+</code></pre><p>// Now int a Material</p><pre><code>var material = new THREE.MeshBasicMaterial({color: 0xffff00}); 
+</code></pre><p>// stick it all together</p><pre><code>var cube = new THREE.Mesh(geometry, material);
+</code></pre><p>// Add it to the scene</p><pre><code>scene.add(cube); 
+</code></pre><p>// set the camera away from the object</p><pre><code>camera.position.z = 5; 
+</code></pre><p>Not Quite Yet... Render!</p><pre><code>var render = function () { 
+</code></pre><p>// Request Animation Frame!</p><pre><code>requestAnimationFrame(render); 
+</code></pre><p>// lets do animate something</p><pre><code>cube.rotation.x += 0.1;
+cube.rotation.y += 0.1; 
+</code></pre><p>// tell the renderer to RENDER! the Scene and the Camera</p><pre><code>renderer.render(scene, camera);
+
+}; 
+
+render(); 
+</code></pre><p>Other Tools
+Detector.js
+Stats.js</p><h3 id="three-js-boilerplate"><a href="#three-js-boilerplate" aria-hidden="true" class="header-anchor">#</a> Three.js BoilerPlate!</h3><pre><code>http://jeromeetienne.github.io/threejsboilerplatebuilder/#builder 
+</code></pre><h3 id="other-resources"><a href="#other-resources" aria-hidden="true" class="header-anchor">#</a> Other Resources</h3><pre><code>http://threejs.org/docs/ 
+http://www.aerotwist.com/tutorials/getting-started-with-three-js/ 
+http://stemkoski.github.io/Three.js/ 
+http://learningthreejs.com/blog/2013/08/02/how-to-do-a-procedural-city-in-100lines/ 
+</code></pre><p>Cool Examples</p><pre><code>http://lights.elliegoulding.com/ 
+http://acko.net/ 
+http://tutorialzine.com/2013/09/20-impressive-examples-for-learning-webgl-with-three-js/ 
+http://www.sitepoint.com/three-js-babylon-js-comparison-webgl-frameworks/ 
+http://www.sitepoint.com/talk-html5-games-with-the-experts-resources-and-transcript/ 
+http://www.html5canvastutorials.com/three/html5-canvas-webgl-with-three-js/ 
+</code></pre><p>OTHER Useful Learning MATERIAL...</p><pre><code>HTTP://LEARNINGTHREEJS.COM/ 
+</code></pre><p>Great for diving deeper with other js libraries</p><pre><code>http://coding.smashingmagazine.com/2013/09/17/introduction-to-polygonal-modeling-and-three-js/ 
+</code></pre><p>ADDITIONAL</p><p>HOW TO RENDER MULTIPLE VIEWS IN A SINGLE VIEWPORT? (MULTIPLE CAMERAS)</p><pre><code>HTTP://MRDOOB.GITHUB.IO/THREE.JS/EXAMPLES/WEBGL_MULTIPLE_VIEWS.HTML 
+http://bkcore.com/blog/3d/webgl-three-js-extension-rendermanager.html 
+http://picanteverde.wordpress.com/2013/06/14/3d-side-by-side-with-three-js/ 
+</code></pre><p>OpenCTM [Open Compressed Triangle Mesh]</p><pre><code>http://vizup.com/demo/webview-cami.html 
+http://openctm.sourceforge.net/ 
+</code></pre><p>Adding Physics libraries</p><pre><code>http://learningthreejs.com/blog/2012/06/05/3d-physics-with-three-js-and-physijs/ 
+</code></pre><p>Adding Keyboard Functionality</p><pre><code>http://learningthreejs.com/data/THREEx/docs/THREEx.KeyboardState.html 
+</code></pre><h3 id="questions"><a href="#questions" aria-hidden="true" class="header-anchor">#</a> Questions?</h3><p>Does it run on mobile?
+Physics on three.js?
+Bullet.js / ammo.js / </p><p>babylon.js for ie?</p><pre><code>www.babylonjs.com 
+</code></pre><h3 id="the-end"><a href="#the-end" aria-hidden="true" class="header-anchor">#</a> The end</h3><h3 id="author"><a href="#author" aria-hidden="true" class="header-anchor">#</a> Author</h3><p>Denis Tsoi</p></div><!----><!----></div></div></div>
+    <script src="/talks/assets/js/11.6cc4d933.js" defer></script><script src="/talks/assets/js/app.3b53f309.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Denis Tsoi | WTF is CSS3d... And Why should I Care?</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/talks/assets/css/12.styles.b03cb546.css" as="style"><link rel="preload" href="/talks/assets/js/app.3b53f309.js" as="script"><link rel="preload" href="/talks/assets/js/10.b68afec7.js" as="script"><link rel="prefetch" href="/talks/assets/js/0.4f86eb99.js"><link rel="prefetch" href="/talks/assets/js/1.623cfe98.js"><link rel="prefetch" href="/talks/assets/js/2.fe07065d.js"><link rel="prefetch" href="/talks/assets/js/3.e86d2629.js"><link rel="prefetch" href="/talks/assets/js/4.5eea39a7.js"><link rel="prefetch" href="/talks/assets/js/5.dc408caa.js"><link rel="prefetch" href="/talks/assets/js/6.a115e269.js"><link rel="prefetch" href="/talks/assets/js/7.fd02250b.js"><link rel="prefetch" href="/talks/assets/js/8.2361434e.js"><link rel="prefetch" href="/talks/assets/js/9.3383427b.js"><link rel="prefetch" href="/talks/assets/js/11.6cc4d933.js">
+    <link rel="stylesheet" href="/talks/assets/css/12.styles.b03cb546.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/talks/" class="home-link router-link-active"><!----><span class="site-name">
+      Denis Tsoi
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="https://denistsoi.github.io" target="_blank" rel="noopener noreferrer" class="nav-link">CV</a></div><div class="nav-item"><a href="/talks/" class="nav-link">Talks</a></div><div class="nav-item"><a href="https://github.com/denistsoi" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://denistsoi.github.io" target="_blank" rel="noopener noreferrer" class="nav-link">CV</a></div><div class="nav-item"><a href="/talks/" class="nav-link">Talks</a></div><div class="nav-item"><a href="https://github.com/denistsoi" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav><!----></div><div class="page"><div class="content"><h1 id="wtf-is-css3d-and-why-should-i-care"><a href="#wtf-is-css3d-and-why-should-i-care" aria-hidden="true" class="header-anchor">#</a> WTF is CSS3d... And Why should I Care?</h1><p>Hosted by Denis Tsoi
+@denistsoi (twitter)</p><h2 id="everybody-loves-backend-right"><a href="#everybody-loves-backend-right" aria-hidden="true" class="header-anchor">#</a> Everybody Loves Backend Right?</h2><p>CSS3d = css awesomeness</p><h2 id="what-you-will-hear-me-ranting-about"><a href="#what-you-will-hear-me-ranting-about" aria-hidden="true" class="header-anchor">#</a> What You will hear me ranting about...</h2><ul><li>CSS3D Transforms</li><li>Live Code Example</li><li>CSS3D vs jQuery</li><li>Limitations of CSS3D</li><li>Tie in: Intro to Sass</li><li>CSS3d Transforms</li></ul><p>/* within .css file <em>/
+/</em> remember your vendor prefixes... for now */</p><pre><code>el {
+  transform-style: preserve3d;
+  transform: translate3d(x,y,z);
+  transition: all 2s ease-in;
+}
+</code></pre><p>/* adding some 'CSS interaction' */</p><pre><code>el:hover {
+  transform: translate3d(-x,-y,-z);
+  transition: all 2s ease-in;
+}
+</code></pre><h2 id="live-coding-example"><a href="#live-coding-example" aria-hidden="true" class="header-anchor">#</a> Live Coding Example</h2><h4 id="simple-transitions"><a href="#simple-transitions" aria-hidden="true" class="header-anchor">#</a> Simple Transitions</h4><pre><code>http://codepen.io/denistsoi/pen/lGut
+</code></pre><h4 id="_3d-perspective"><a href="#_3d-perspective" aria-hidden="true" class="header-anchor">#</a> 3D perspective</h4><pre><code>http://cdpn.io/lGuth
+</code></pre><h2 id="why-use-pure-css-js-instead-of-jquery"><a href="#why-use-pure-css-js-instead-of-jquery" aria-hidden="true" class="header-anchor">#</a> Why Use pure css &amp; js instead of jquery?</h2><p>Relying on jQuery can be restrictive
+instead, use CSS classes and js &quot;add class&quot;
+Frontenders can focus on styles rather than getting
+&quot;lost in the code&quot;</p><h3 id="limitations-of-css3d"><a href="#limitations-of-css3d" aria-hidden="true" class="header-anchor">#</a> Limitations of CSS3d</h3><ul><li>Limitations of the Browser...
+What are the limitations of the Browser?
+... Future Topic?</li></ul><h3 id="what-can-t-i-do-with-css3"><a href="#what-can-t-i-do-with-css3" aria-hidden="true" class="header-anchor">#</a> What Can't I do with CSS3?</h3><p>How about Scalability?...
+Dynamic/programatic animations</p><h3 id="too-lazy-to-make-3d-shapes-in-css"><a href="#too-lazy-to-make-3d-shapes-in-css" aria-hidden="true" class="header-anchor">#</a> Too lazy to make 3d shapes in css?</h3><pre><code>http://tridiv.com/
+</code></pre><p>If you need more 3D use Three.js or WEBGL! 😄</p><p>Why? ...</p><pre><code>http://gcode.joewalnes.com/
+</code></pre><p><code>Imagine running each dot as a DOM Element? - IT WON'T SCALE!</code></p><h3 id="what-about-keyframes"><a href="#what-about-keyframes" aria-hidden="true" class="header-anchor">#</a> what about Keyframes?</h3><p>Well - Keyframes are awesome,
+like this sample I made a while back</p><pre><code>http://codepen.io/denistsoi/pen/crldB
+
+http://codepen.io/denistsoi/full/crldB/ 
+</code></pre><p>Now the thing to consider when you're prototyping is:</p><ol><li>Is this sustainable for multiple transitions?</li></ol><p>For boutique animations, you wouldn't care, but if you're concerned with reusable code, then keyframes might not be great...</p><h2 id="the-end"><a href="#the-end" aria-hidden="true" class="header-anchor">#</a> The end</h2><h3 id="author"><a href="#author" aria-hidden="true" class="header-anchor">#</a> Author</h3><p>Denis Tsoi</p></div><!----><!----></div></div></div>
+    <script src="/talks/assets/js/10.b68afec7.js" defer></script><script src="/talks/assets/js/app.3b53f309.js" defer></script>
+  </body>
+</html>

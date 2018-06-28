@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Denis Tsoi | Intro to SASS: CSS on steroids</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/talks/assets/css/12.styles.b03cb546.css" as="style"><link rel="preload" href="/talks/assets/js/app.3b53f309.js" as="script"><link rel="preload" href="/talks/assets/js/8.2361434e.js" as="script"><link rel="prefetch" href="/talks/assets/js/0.4f86eb99.js"><link rel="prefetch" href="/talks/assets/js/1.623cfe98.js"><link rel="prefetch" href="/talks/assets/js/2.fe07065d.js"><link rel="prefetch" href="/talks/assets/js/3.e86d2629.js"><link rel="prefetch" href="/talks/assets/js/4.5eea39a7.js"><link rel="prefetch" href="/talks/assets/js/5.dc408caa.js"><link rel="prefetch" href="/talks/assets/js/6.a115e269.js"><link rel="prefetch" href="/talks/assets/js/7.fd02250b.js"><link rel="prefetch" href="/talks/assets/js/9.3383427b.js"><link rel="prefetch" href="/talks/assets/js/10.b68afec7.js"><link rel="prefetch" href="/talks/assets/js/11.6cc4d933.js">
+    <link rel="stylesheet" href="/talks/assets/css/12.styles.b03cb546.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/talks/" class="home-link router-link-active"><!----><span class="site-name">
+      Denis Tsoi
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="https://denistsoi.github.io" target="_blank" rel="noopener noreferrer" class="nav-link">CV</a></div><div class="nav-item"><a href="/talks/" class="nav-link">Talks</a></div><div class="nav-item"><a href="https://github.com/denistsoi" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://denistsoi.github.io" target="_blank" rel="noopener noreferrer" class="nav-link">CV</a></div><div class="nav-item"><a href="/talks/" class="nav-link">Talks</a></div><div class="nav-item"><a href="https://github.com/denistsoi" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav><!----></div><div class="page"><div class="content"><h1 id="intro-to-sass-css-on-steroids"><a href="#intro-to-sass-css-on-steroids" aria-hidden="true" class="header-anchor">#</a> Intro to SASS: CSS on steroids</h1><h4 id="as-part-of-the-woco-hk-frontend-series"><a href="#as-part-of-the-woco-hk-frontend-series" aria-hidden="true" class="header-anchor">#</a> As part of the #WOCO.HK Frontend Series</h4><p>Hosted by Denis Tsoi<br>
+@denistsoi (twitter)</p><h2 id="let-s-get-it-started-prerequisites"><a href="#let-s-get-it-started-prerequisites" aria-hidden="true" class="header-anchor">#</a> Let's get it started... prerequisites:</h2><ul><li>Basic (CSS)[http://pumpula.net/p/apps/css-vocabulary/]</li></ul><p><img src="/talks/assets/img/css-sucks.10d96714.jpg" alt="css-sucks"></p><h2 id="scss-is-not"><a href="#scss-is-not" aria-hidden="true" class="header-anchor">#</a> scss is not...</h2><p><img src="/talks/assets/img/sassquatch.ee7eeff1.jpg" alt="sassquatch"></p><h2 id="what-is-scss"><a href="#what-is-scss" aria-hidden="true" class="header-anchor">#</a> What is scss?</h2><ol><li>nested CSS</li><li>variables</li><li>mixins</li><li>arguments (functions)</li><li>extends</li><li>imports and partials</li></ol><h3 id="bonus"><a href="#bonus" aria-hidden="true" class="header-anchor">#</a> Bonus:</h3><ol><li>Indented scss</li><li>compass (scss Extension)</li></ol><h2 id="_1-nested-css"><a href="#_1-nested-css" aria-hidden="true" class="header-anchor">#</a> 1. nested css</h2><p>before</p><pre class="language-css"><code><span class="token selector">body</span> <span class="token punctuation">{</span>
+  <span class="token comment">/* some css */</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">body div.container</span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+  <span class="token comment">/* some more .container css */</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">body .container .content</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token selector">body .container .content ... more classes</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre><p>now</p><pre class="language-scss"><code><span class="token selector">body </span><span class="token punctuation">{</span>
+  <span class="token comment">/* some css */</span>
+  <span class="token selector">div.container </span><span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+    <span class="token selector">.content </span><span class="token punctuation">{</span>
+      <span class="token comment">/* content css */</span>
+    <span class="token punctuation">}</span>
+    <span class="token selector">.moreclasses </span><span class="token punctuation">{</span> <span class="token comment">/* more css */</span> <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><p>alt</p><pre class="language-scss"><code><span class="token selector">body </span><span class="token punctuation">{</span>
+  <span class="token comment">/* some css */</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">div.container </span><span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+  <span class="token selector">.content </span><span class="token punctuation">{</span>
+    <span class="token comment">/* content css */</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">.moreclasses </span><span class="token punctuation">{</span> <span class="token comment">/* more css */</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><p>but why not just use specificity?</p><h2 id="_2-variables"><a href="#_2-variables" aria-hidden="true" class="header-anchor">#</a> 2. Variables</h2><pre class="language-scss"><code><span class="token property"><span class="token variable">$page-width</span></span><span class="token punctuation">:</span> 768px<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$cool-blue</span></span><span class="token punctuation">:</span> #0CA8EB<span class="token punctuation">;</span>
+
+<span class="token selector">body </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token variable">$page-width</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">nav li.active </span><span class="token punctuation">{</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token variable">$cool-blue</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><p>You can also use math!!!</p><pre class="language-scss"><code><span class="token property"><span class="token variable">$size1</span></span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$size2</span></span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$size3</span></span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+
+<span class="token variable">$totalsize</span> = <span class="token variable">$size1</span> <span class="token operator">+</span> <span class="token variable">$size2</span> <span class="token operator">+</span> <span class="token variable">$size3</span><span class="token punctuation">;</span>  <span class="token comment">// 60px</span>
+<span class="token variable">$averagesize</span> = <span class="token variable">$totalsize</span> <span class="token operator">/</span> 3<span class="token punctuation">;</span> <span class="token comment">// 20px</span>
+</code></pre><h2 id="_3-mixins"><a href="#_3-mixins" aria-hidden="true" class="header-anchor">#</a> 3. mixins</h2><p>Mixins are reusable snippets of code
+(without the use of css classes)</p><pre class="language-scss"><code><span class="token selector">.some-style </span><span class="token punctuation">{</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> 12px<span class="token punctuation">;</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 12px<span class="token punctuation">;</span>
+  <span class="token property">font-weight</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+  <span class="token comment">/* some more stuff */</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.some-similar-style </span><span class="token punctuation">{</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+  <span class="token property">font-weight</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+  <span class="token comment">/* some more stuff */</span>
+<span class="token punctuation">}</span>
+</code></pre><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>some-style<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>some-similar-style<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p>so you could do something the following without scss</p><pre class="language-css"><code><span class="token selector">.some-common-style</span> <span class="token punctuation">{</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">font-weight</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.some-style</span> <span class="token punctuation">{</span>
+  <span class="token comment">/* custom css */</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.some-similar-style</span> <span class="token punctuation">{</span>
+  <span class="token comment">/* custom css */</span>
+<span class="token punctuation">}</span>
+</code></pre><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>some-common-style some-style<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>some-common-style some-similar-style<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p>but what if you want to minimize the population of css classes in your html markup?</p><p>this is where mixins come into play;</p><pre class="language-scss"><code><span class="token keyword">@mixin</span> <span class="token selector">commonstyle </span><span class="token punctuation">{</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.main,
+.detail </span><span class="token punctuation">{</span>
+  <span class="token keyword">@include</span> commonstyle<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>main<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>detail<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p>but reusing the <code>commonstyle</code> mixin above is only useful if the values are predefined...</p><h2 id="_4-arguments"><a href="#_4-arguments" aria-hidden="true" class="header-anchor">#</a> 4. arguments</h2><pre class="language-scss"><code><span class="token keyword">@mixin</span> <span class="token function">commonstyle</span><span class="token punctuation">(</span><span class="token variable">$padding</span>, <span class="token property"><span class="token variable">$margin</span></span><span class="token punctuation">:</span> 0<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token variable">$margin</span><span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token variable">$padding</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.main,
+.detail </span><span class="token punctuation">{</span>
+  <span class="token keyword">@include</span> <span class="token function">commonstyle</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><p>but lets use an earlier example</p><pre class="language-scss"><code><span class="token keyword">@mixin</span> <span class="token function">font</span><span class="token punctuation">(</span><span class="token property"><span class="token variable">$font-size</span></span><span class="token punctuation">:</span> 12px, <span class="token property"><span class="token variable">$line-height</span></span><span class="token punctuation">:</span> 12px, <span class="token property"><span class="token variable">$font-weight</span></span><span class="token punctuation">:</span> normal<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token variable">$font-size</span><span class="token punctuation">;</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> <span class="token variable">$line-height</span><span class="token punctuation">;</span>
+  <span class="token property"><span class="token variable">$font-weight</span></span><span class="token punctuation">:</span> <span class="token variable">$font-weight</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.main </span><span class="token punctuation">{</span>
+  <span class="token keyword">@include</span> font<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.detail </span><span class="token punctuation">{</span>
+  <span class="token keyword">@include</span> <span class="token function">detail</span><span class="token punctuation">(</span>16px, 16px, bold<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><h2 id="_5-extends"><a href="#_5-extends" aria-hidden="true" class="header-anchor">#</a> 5. extends</h2><p>With <code>extends</code>, you might be working on a <code>css class</code> and later down the line, you want to 'inherit', the styles from a specific <code>class</code>.</p><p>You can use <code>@extend .selector</code> such that</p><pre class="language-scss"><code><span class="token selector">.class </span><span class="token punctuation">{</span>
+  <span class="token keyword">@extend</span> .predefined<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><p><code>.class</code> will be populated with <code>.predefined</code>. This is particularly useful when we use a component based approach to development, such that <code>componentA</code> is able to use <code>componentB</code> where they may not need to use a mixin or import componentA styles.</p><h2 id="_6-imports-and-partials"><a href="#_6-imports-and-partials" aria-hidden="true" class="header-anchor">#</a> 6. imports and partials</h2><p>Remember... <code>_filename</code> is a partial,
+whereas <code>filename.scss</code> will be compile to a separate scss file</p><p>other tips/tricks
+Using &quot;&amp;&quot; as ' parent' selector...</p><pre class="language-css"><code><span class="token selector">li</span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">li:hover</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><pre class="language-scss"><code><span class="token selector">li </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+  <span class="token selector"><span class="token parent important">&amp;</span>:hover </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><h3 id="update"><a href="#update" aria-hidden="true" class="header-anchor">#</a> update</h3><p>Update:
+Since sass 3.x.x, the popularity of using <code>{}</code> and <code>;</code> notation for scss, the popularity of using scss plays a lot nicer, such that scss isn't as strict when it comes to say, tab spacing.</p><h2 id="how-to-use-from-cli"><a href="#how-to-use-from-cli" aria-hidden="true" class="header-anchor">#</a> how to use from cli</h2><p>There are a few ways to getting started.
+From the sass-lang site, you can use the <code>ruby-gem</code> as follows.</p><pre class="language-text"><code>sass &lt;input.sass&gt; &lt;output.css&gt;
+</code></pre><p>example:</p><pre class="language-text"><code>$ sass input.sass output.css
+</code></pre><p>Watch one file</p><pre class="language-text"><code>sass --watch app.scss:public/stylesheets
+</code></pre><p>WATCH DIRECTORY</p><pre class="language-text"><code>sass --watch app.scss:public/stylesheets
+</code></pre><h3 id="update-2016-12-14"><a href="#update-2016-12-14" aria-hidden="true" class="header-anchor">#</a> Update: 2016-12-14</h3><p>using scss with node
+options:</p><ul><li>build tool (<code>buildpack</code>, <code>webpack</code>, <code>gulp</code>, <code>grunt</code>, <code>yo</code> etc)</li><li>middleware (<code>node-quesadilla</code>)</li><li>vanilla cli (<code>sass --watch</code>)</li></ul><h2 id="the-end"><a href="#the-end" aria-hidden="true" class="header-anchor">#</a> The end</h2><p>Thanks for reaching thus far, and if you would like to learn more, you can either contact me via <a href="mailto:denistsoi@gmail.com">denistsoi@gmail.com</a>
+or checkout <a href="sass-lang.com">sass-lang.com</a> for documentation on scss, <a href="http://codepen.io/search/pens?q=scss&limit=all&type=type-pens" target="_blank" rel="noopener noreferrer">codepen</a> for inspiration.</p><h3 id="author"><a href="#author" aria-hidden="true" class="header-anchor">#</a> Author</h3><p>Denis Tsoi</p></div><!----><!----></div></div></div>
+    <script src="/talks/assets/js/8.2361434e.js" defer></script><script src="/talks/assets/js/app.3b53f309.js" defer></script>
+  </body>
+</html>

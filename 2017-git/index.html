@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Denis Tsoi | git terminal workshop</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/talks/assets/css/12.styles.b03cb546.css" as="style"><link rel="preload" href="/talks/assets/js/app.3b53f309.js" as="script"><link rel="preload" href="/talks/assets/js/2.fe07065d.js" as="script"><link rel="prefetch" href="/talks/assets/js/0.4f86eb99.js"><link rel="prefetch" href="/talks/assets/js/1.623cfe98.js"><link rel="prefetch" href="/talks/assets/js/3.e86d2629.js"><link rel="prefetch" href="/talks/assets/js/4.5eea39a7.js"><link rel="prefetch" href="/talks/assets/js/5.dc408caa.js"><link rel="prefetch" href="/talks/assets/js/6.a115e269.js"><link rel="prefetch" href="/talks/assets/js/7.fd02250b.js"><link rel="prefetch" href="/talks/assets/js/8.2361434e.js"><link rel="prefetch" href="/talks/assets/js/9.3383427b.js"><link rel="prefetch" href="/talks/assets/js/10.b68afec7.js"><link rel="prefetch" href="/talks/assets/js/11.6cc4d933.js">
+    <link rel="stylesheet" href="/talks/assets/css/12.styles.b03cb546.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/talks/" class="home-link router-link-active"><!----><span class="site-name">
+      Denis Tsoi
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="https://denistsoi.github.io" target="_blank" rel="noopener noreferrer" class="nav-link">CV</a></div><div class="nav-item"><a href="/talks/" class="nav-link">Talks</a></div><div class="nav-item"><a href="https://github.com/denistsoi" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://denistsoi.github.io" target="_blank" rel="noopener noreferrer" class="nav-link">CV</a></div><div class="nav-item"><a href="/talks/" class="nav-link">Talks</a></div><div class="nav-item"><a href="https://github.com/denistsoi" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav><!----></div><div class="page"><div class="content"><h2 id="git-terminal-workshop"><a href="#git-terminal-workshop" aria-hidden="true" class="header-anchor">#</a> git terminal workshop</h2><p>install git
+sourcetree gui (git)</p><pre class="language-text"><code>git config user.name &lt;name&gt;
+git config user.email &lt;email&gt;
+</code></pre><h3 id="init-start-a-new-project"><a href="#init-start-a-new-project" aria-hidden="true" class="header-anchor">#</a> init (start a new project)</h3><pre class="language-text"><code>git init
+</code></pre><h3 id="clone-download-a-remote-repo-to-your-local-machine"><a href="#clone-download-a-remote-repo-to-your-local-machine" aria-hidden="true" class="header-anchor">#</a> clone (download a remote repo to your local machine)</h3><pre class="language-text"><code>git clone https://github.com/energbox/eb-workshops
+</code></pre><h2 id="show-stats-logs"><a href="#show-stats-logs" aria-hidden="true" class="header-anchor">#</a> show stats/logs</h2><h3 id="status-show-status"><a href="#status-show-status" aria-hidden="true" class="header-anchor">#</a> status (show status)</h3><pre class="language-text"><code>git status
+</code></pre><h3 id="remote-anything-to-do-with-remote-info"><a href="#remote-anything-to-do-with-remote-info" aria-hidden="true" class="header-anchor">#</a> remote (anything to do with remote info)</h3><pre class="language-text"><code>git remote -v
+</code></pre><p>add</p><pre class="language-text"><code>git remote add &lt;name&gt; 
+</code></pre><p>e.g.</p><pre class="language-text"><code>git remote add https://github.com/energybox/eb-workshops
+</code></pre><p>remove</p><pre class="language-text"><code>git remote remove &lt;name&gt;  (removes remote url on your local repo)
+</code></pre><h2 id="add-work"><a href="#add-work" aria-hidden="true" class="header-anchor">#</a> add work</h2><h3 id="add-add-to-commit-but-not-committed"><a href="#add-add-to-commit-but-not-committed" aria-hidden="true" class="header-anchor">#</a> add (add to commit, but not committed)</h3><pre class="language-text"><code>git add .  (add all files)
+</code></pre><h3 id="commit-commit-adds-to-commit-tree"><a href="#commit-commit-adds-to-commit-tree" aria-hidden="true" class="header-anchor">#</a> commit (commit, adds to commit tree)</h3><pre class="language-text"><code>git commit -m &quot;Init Commit&quot;
+</code></pre><pre class="language-text"><code>git commit --amend (amend current commit, good when you want to want to change the commit message)
+</code></pre><h3 id="reset-there-s-soft-hard-resets"><a href="#reset-there-s-soft-hard-resets" aria-hidden="true" class="header-anchor">#</a> reset (there's soft/hard resets)</h3><p>// when you do <code>git add</code> but want to reset the files added</p><pre class="language-text"><code>git reset 
+</code></pre><pre class="language-text"><code>undo last commit
+$ git commit -m &quot;Something terribly misguided&quot;              (1)
+$ git reset HEAD~                                           (2)
+&lt;&lt; edit files as necessary &gt;&gt;                               (3)
+$ git add ...                                               (4)
+$ git commit -c ORIG_HEAD                                   (5)
+</code></pre><pre class="language-text"><code>discards all history and changes back to commit
+$ git reset --hard &lt;commit&gt;
+</code></pre><h3 id="push-pushes-commits-to-remote"><a href="#push-pushes-commits-to-remote" aria-hidden="true" class="header-anchor">#</a> push (pushes commits to remote)</h3><pre class="language-text"><code>git push origin master
+</code></pre><h3 id="tag-when-you-want-to-add-a-tag-to-a-commit-good-for-releases"><a href="#tag-when-you-want-to-add-a-tag-to-a-commit-good-for-releases" aria-hidden="true" class="header-anchor">#</a> tag (when you want to add a tag to a commit, good for releases)</h3><pre class="language-text"><code>git tag -a &lt;version number&gt; -m &lt;version message/name&gt;
+</code></pre><p>e.g.</p><pre class="language-text"><code>git tag -a 0.1.0 -m &quot;Version 0.1.0&quot; (semver)
+</code></pre><h3 id="log-show-logs"><a href="#log-show-logs" aria-hidden="true" class="header-anchor">#</a> log (show logs)</h3><pre class="language-text"><code>git log
+</code></pre><h3 id="stash-dont-commit-but-save-for-later-useful-when-swtiching-branches"><a href="#stash-dont-commit-but-save-for-later-useful-when-swtiching-branches" aria-hidden="true" class="header-anchor">#</a> stash (dont commit but save for later, useful when swtiching branches)</h3><pre class="language-text"><code>git stash
+
+</code></pre><pre class="language-text"><code>git stash pop (pop out)
+</code></pre><pre class="language-text"><code>git stash drop (dont want anymore)
+</code></pre><h3 id="fetch-fetch-don-t-merge"><a href="#fetch-fetch-don-t-merge" aria-hidden="true" class="header-anchor">#</a> fetch (fetch don't merge)</h3><pre class="language-text"><code>git fetch 
+</code></pre><h2 id="more-intermediate-techniques"><a href="#more-intermediate-techniques" aria-hidden="true" class="header-anchor">#</a> more intermediate techniques</h2><h3 id="pull-fetch-merge"><a href="#pull-fetch-merge" aria-hidden="true" class="header-anchor">#</a> pull (fetch + merge)</h3><pre class="language-text"><code>git pull origin master 
+</code></pre><h3 id="merge-merge-two-branches-together"><a href="#merge-merge-two-branches-together" aria-hidden="true" class="header-anchor">#</a> merge (merge two branches together)</h3><pre class="language-text"><code>git merge develop master
+</code></pre><h3 id="rebase-put-local-changes-above-another-branch-could-be-remote"><a href="#rebase-put-local-changes-above-another-branch-could-be-remote" aria-hidden="true" class="header-anchor">#</a> rebase (put local changes above another branch, could be remote)</h3><pre class="language-text"><code>git merge origin/develop
+</code></pre><h3 id="checkout-when-you-want-to-switch-branch"><a href="#checkout-when-you-want-to-switch-branch" aria-hidden="true" class="header-anchor">#</a> checkout (when you want to switch branch)</h3><pre class="language-text"><code>git checkout branch 
+</code></pre><h3 id="branch-when-you-want-to-create-or-delete-branch"><a href="#branch-when-you-want-to-create-or-delete-branch" aria-hidden="true" class="header-anchor">#</a> branch (when you want to create or delete branch)</h3><pre class="language-text"><code>git branch &lt;new branch name&gt;
+git branch -D &lt;branch name&gt; (delete branch)
+</code></pre><h3 id="diff-show-differences"><a href="#diff-show-differences" aria-hidden="true" class="header-anchor">#</a> diff (show differences)</h3><pre class="language-text"><code>shows file differences not yet staged
+git diff
+</code></pre><pre class="language-text"><code>between two branches
+git diff &lt;branch&gt; &lt;branch2&gt;
+</code></pre><h3 id="cherrypick-select-one-commit-from-another-branch-and-add-to-current-branch"><a href="#cherrypick-select-one-commit-from-another-branch-and-add-to-current-branch" aria-hidden="true" class="header-anchor">#</a> cherrypick (select one commit from another branch and add to current branch)</h3><pre class="language-text"><code>git cherrypick &lt;commitmessage&gt; 
+</code></pre><h2 id="submodules-advanced-topic"><a href="#submodules-advanced-topic" aria-hidden="true" class="header-anchor">#</a> submodules (advanced topic)</h2><h2 id="cheats"><a href="#cheats" aria-hidden="true" class="header-anchor">#</a> cheats</h2><pre class="language-text"><code>[alias]
+	l = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	amend = commit --amend
+	sh = stash
+	pop = stash pop
+	drop = stash drop
+	st = status
+	co = checkout
+	c = config
+	p = push origin develop
+	rb = rebase origin/develop
+	f = fetch
+</code></pre><h2 id="todos"><a href="#todos" aria-hidden="true" class="header-anchor">#</a> todos</h2><ul><li>gifs <code>git.md</code></li><li>submodules</li><li>other stuff I missed</li></ul><h2 id="further-materials"><a href="#further-materials" aria-hidden="true" class="header-anchor">#</a> further materials</h2><ul><li>https://try.github.io/levels/1/challenges/1</li><li>https://github.com/pcottle/learnGitBranching</li><li>see <code>git-cheatsheet.pdf</code> for cheatsheet</li></ul><h2 id="author"><a href="#author" aria-hidden="true" class="header-anchor">#</a> author</h2><p>Denis Tsoi <a href="mailto:denistsoi@gmail.com">denistsoi@gmail.com</a></p></div><!----><!----></div></div></div>
+    <script src="/talks/assets/js/2.fe07065d.js" defer></script><script src="/talks/assets/js/app.3b53f309.js" defer></script>
+  </body>
+</html>

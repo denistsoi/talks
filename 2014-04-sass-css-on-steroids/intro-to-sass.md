@@ -1,9 +1,6 @@
 # Intro to SASS: CSS on steroids
 #### As part of the #WOCO.HK Frontend Series
 
-Hosted by Denis Tsoi  
-@denistsoi (twitter)  
-
 ## Let's get it started... prerequisites:
 -  Basic (CSS)[http://pumpula.net/p/apps/css-vocabulary/]
 
@@ -292,8 +289,7 @@ options:
 
 ## The end
 
-Thanks for reaching thus far, and if you would like to learn more, you can either contact me via <denistsoi@gmail.com>
-or checkout [sass-lang.com](sass-lang.com) for documentation on scss, [codepen](http://codepen.io/search/pens?q=scss&limit=all&type=type-pens) for inspiration.
+Thanks for reaching thus far, and if you would like to learn more, checkout [sass-lang.com](sass-lang.com) for documentation on scss, [codepen](http://codepen.io/search/pens?q=scss&limit=all&type=type-pens) for inspiration.
 
 ### Author
 Denis Tsoi
